@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { app } from "./app.js";
+import { server } from "./app.js";
 
 // Environment Variables
 dotenv.config({
@@ -10,7 +10,7 @@ const PORT_NUMBER = process.env.PORT_NUMBER;
 const HOST_NAME = process.env.HOST_NAME;
 
 const startServer = () => {
-  app.listen(PORT_NUMBER, () => {
+  server.listen(PORT_NUMBER, () => {
     console.log(`🚀🚀Server runnig at http://${HOST_NAME}:${PORT_NUMBER}`);
   });
 };
