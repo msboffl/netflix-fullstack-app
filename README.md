@@ -1,1 +1,1 @@
-# netflix-fullstack-app
+# Netflix Fullstack App
