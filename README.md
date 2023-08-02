@@ -1,1 +1,0 @@
-# Netflix Fullstack App
