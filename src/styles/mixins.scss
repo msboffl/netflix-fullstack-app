@@ -1,0 +1,13 @@
+@import "./variable.scss";
+
+@mixin nf-default-box {
+  min-height: auto;
+  height: 100%;
+  padding: 3.5rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: $white-900;
+  border-bottom: .5rem solid $black-800;
+  position: relative;
+}
