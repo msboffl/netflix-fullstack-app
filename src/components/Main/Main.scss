@@ -1,5 +1,70 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/media.scss";
 
 .nf__row {
   @include nf-default-box;
 }
+.card-hero {
+  min-height: 30rem;
+  padding: 7.5rem 0 2rem;
+
+  .nf__card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .card-hero__background {
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card__hero-gradient {
+        background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 0,
+          rgba(0, 0, 0, 0) 60%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .nf__card-text {
+    margin: auto;
+    max-width: calc(100% - 3rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title-and-desc {
+      flex-basis: 50%;
+      z-index: 1;
+      width: 100%;
+      @include title-and-desc;
+    }
+  }
+}
+
+@media screen and (min-width: $sm) {
+  .card-hero {
+    min-height: 32rem;
+  }
+}
+
+@media screen and (min-wdith: $md) {
+  .card-hero {
+    min-height: 43.75rem;
+    padding: 9.875rem 0 4rem;
+  }
+}
+
