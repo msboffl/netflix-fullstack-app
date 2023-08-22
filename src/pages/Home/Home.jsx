@@ -1,14 +1,23 @@
-import React from "react";
-// import Header from "../../components/Header/Header";
-import Main from "../../components/Main/Main";
-// import Footer from "../../components/Footer/Footer";
+import {
+  EnjoyYourTv,
+  Faqs,
+  Footer,
+  KidProfiles,
+  UnlimitedMovies,
+  WatchEvery,
+  WatchOffline,
+} from "../../sections";
 
 const Home = () => {
   return (
     <>
-      {/* <Header /> */}
-      <Main />
-      {/* <Footer /> */}
+      <UnlimitedMovies />
+      <EnjoyYourTv />
+      <WatchOffline />
+      <WatchEvery />
+      <KidProfiles />
+      <Faqs />
+      <Footer />
     </>
   );
 };
