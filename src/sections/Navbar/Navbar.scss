@@ -1,0 +1,50 @@
+.header {
+  position: relative;
+  z-index: 1;
+}
+.card-header {
+  height: 5rem;
+  margin: auto;
+  max-width: calc(100% - 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .logo {
+    margin-right: auto;
+  }
+  .language {
+    margin-right: 0.25rem;
+    select {
+      padding: 0.25rem;
+      border-radius: 5px;
+    }
+  }
+  .button {
+    margin-left: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card-header {
+    max-width: calc(100% - 4rem);
+    .language {
+      margin: 0 0.75rem;
+      select {
+        padding-right: 2rem;
+      }
+    }
+    .button {
+      margin: 0 0.75rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card-header {
+    max-width: calc(85% - 6rem);
+    .netflix-logo {
+      width: 10rem;
+    }
+  }
+}

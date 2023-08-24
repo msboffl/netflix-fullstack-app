@@ -1,3 +1,4 @@
+import NavBar from "./Navbar/NavBar";
 import UnlimitedMovies from "./UnlimitedMovies/UnlimitedMovies";
 import EnjoyYourTv from "./EnjoyYourTv/EnjoyYourTv";
 import WatchOffline from "./WatchOffline/WatchOffline";
@@ -7,6 +8,7 @@ import Faqs from "./Faqs/Faqs";
 import Footer from "./Footer/Footer";
 
 export {
+  NavBar,
   UnlimitedMovies,
   EnjoyYourTv,
   WatchOffline,

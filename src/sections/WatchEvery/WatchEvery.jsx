@@ -1,9 +1,12 @@
-import React from 'react'
+import { Divider } from "../../components";
 
 const WatchEvery = () => {
   return (
-    <div>WatchEvery</div>
-  )
-}
+    <section className="hero__card-row">
+      WatchEvery
+      <Divider />
+    </section>
+  );
+};
 
-export default WatchEvery
+export default WatchEvery;

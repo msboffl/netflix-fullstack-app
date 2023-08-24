@@ -1,0 +1,33 @@
+@use "../../styles/mixins.scss" as *;
+
+.hero__card-row {
+  @include hero__card-row;
+}
+
+.hero__card-divider {
+  @include hero__card-divider;
+}
+.hero__card {
+  @include hero__card;
+}
+
+.hero__card-video {
+  .hero__card-img {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .hero-video {
+      width: 100%;
+      height: 100%;
+      max-width: 73%;
+      max-height: 54%;
+      overflow: hidden;
+      position: absolute;
+      top: 47.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+}

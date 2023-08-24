@@ -1,9 +1,12 @@
-import React from 'react'
+import { Divider } from "../../components";
 
 const Faqs = () => {
   return (
-    <div>Faqs</div>
-  )
-}
+    <section className="hero__card-row">
+      Faqs
+      <Divider />
+    </section>
+  );
+};
 
-export default Faqs
+export default Faqs;

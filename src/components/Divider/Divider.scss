@@ -1,0 +1,5 @@
+@use "../../styles/mixins.scss" as *;
+
+.hero__card-divider {
+    @include hero__card-divider
+}
