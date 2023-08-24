@@ -1,27 +1,8 @@
-@import "./variable.scss";
+@use "./variable.scss" as *;
 
-@mixin nf-default-box {
-  box-sizing: border-box;
-  min-height: auto;
-  height: 100%;
-  padding: 3.5rem 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  color: $white-900;
-  border-bottom: 0.5rem solid $black-800;
-  position: relative;
-}
-
-@mixin title-and-desc {
-  h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0;
-  }
-  p {
-    margin: 1rem 0 0;
-    font-size: 1.125rem;
-    font-weight: 400;
-  }
+@mixin button {
+  padding: 0.25rem 1rem;
+  background: $red-800;
+  border: 2px solid $red-800;
+  border-radius: 5px;
 }
