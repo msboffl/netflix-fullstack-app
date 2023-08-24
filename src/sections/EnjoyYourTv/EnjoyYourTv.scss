@@ -1,4 +1,5 @@
 @use "../../styles/mixins.scss" as *;
+@use "../../styles/media.scss" as *;
 
 .hero__card-row {
   @include hero__card-row;
@@ -9,6 +10,10 @@
 }
 .hero__card {
   @include hero__card;
+  .hero__card-text,
+  .hero__card-video {
+    flex-basis: 50%;
+  }
 }
 
 .hero__card-video {
@@ -29,5 +34,27 @@
       transform: translate(-50%, -50%);
       z-index: -1;
     }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .hero__card {
+    text-align: left;
+    max-width: calc(100% - 4rem);
+    flex-direction: row;
+    .hero__title {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    .hero__text {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .hero__card {
+    max-width: calc(84% - 5rem);
   }
 }
