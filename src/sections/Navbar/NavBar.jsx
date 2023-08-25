@@ -1,5 +1,6 @@
 import "./Navbar.scss";
 import { Button, Logo } from "../../components";
+import { Globe } from "../../Assets/icons";
 
 const NavBar = () => {
   return (
@@ -9,12 +10,12 @@ const NavBar = () => {
           <Logo />
         </span>
         <span className="language">
-          {/* <img src="" alt="Globe" /> */}
+          <img src={Globe} alt="Globe" className="globe" />
           <label htmlFor="language-picker"></label>
           <select
+            
             name="Language"
             id="language-picker"
-            style={{ color: "black" }}
           >
             <option value="en-IN">English</option>
             <option value="hi-IN">हिन्दी</option>
