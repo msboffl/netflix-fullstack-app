@@ -1,3 +1,4 @@
+@use "../../styles/variable.scss" as *;
 .header {
   position: relative;
   z-index: 1;
@@ -15,9 +16,18 @@
   }
   .language {
     margin-right: 0.25rem;
+    position: relative;
+    .globe {
+      position: absolute;
+      top: 26.5%;
+      left: 10%;
+    }
     select {
-      padding: 0.25rem;
+      padding: 0.35rem 2.25rem;
       border-radius: 5px;
+      appearance: none;
+      color: $white-900;
+      background: transparent;
     }
   }
   .button {
@@ -31,7 +41,7 @@
     .language {
       margin: 0 0.75rem;
       select {
-        padding-right: 2rem;
+        padding-right: 1rem;
       }
     }
     .button {
