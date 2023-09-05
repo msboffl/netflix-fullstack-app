@@ -33,7 +33,9 @@
 }
 
 @mixin row_reverse {
-  flex-direction: row-reverse;
+  @media screen and (min-width: $md) {
+    flex-direction: row-reverse;
+  }
 }
 
 @mixin hero__card {

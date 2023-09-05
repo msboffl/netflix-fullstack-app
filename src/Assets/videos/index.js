@@ -1,3 +1,4 @@
-import videoTv from "../videos/videoTv.m4v";
+import videoTv from "./videoTv.m4v";
+import diviceVideo from "./video-devices-in.m4v";
 
-export { videoTv };
+export { videoTv, diviceVideo };
