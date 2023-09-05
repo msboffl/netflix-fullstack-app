@@ -1,4 +1,5 @@
-import NetflixBgImg from "../images/nf-hero.jpeg";
-import StrangerBanner from "../images/stranger_banner.png";
+import NetflixBgImg from "./nf-hero.jpeg";
+import StrangerBanner from "./stranger_banner.png";
+import KidProfileBanner from "./kidProfiles.png";
 
-export { NetflixBgImg, StrangerBanner };
+export { NetflixBgImg, StrangerBanner, KidProfileBanner };
