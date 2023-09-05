@@ -1,0 +1,56 @@
+@use "../../styles/variable.scss" as *;
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/media.scss" as *;
+
+.row__reverse {
+  @include row_reverse;
+}
+
+.hero__download {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  background: $black-900;
+  width: 60%;
+  min-width: 15rem;
+  border: 2px solid $black-700;
+  box-shadow: 0 0 2em 0$black-900;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.65rem;
+  img {
+    height: 4rem;
+    width: initial !important;
+  }
+  .download {
+    text-align: left;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0.3rem 0 0.3rem 1rem;
+
+    h4 {
+      font-size: 0.875rem;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 0.75rem;
+      color: #0071eb;
+    }
+  }
+  .download__img {
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: -2px;
+    display: block;
+    background: url("../../Assets/icons/download-icon.gif") center center
+      no-repeat;
+    background-size: 100%;
+    content: "";
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}

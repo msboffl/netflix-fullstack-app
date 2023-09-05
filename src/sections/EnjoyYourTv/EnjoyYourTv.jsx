@@ -14,8 +14,8 @@ const EnjoyYourTv = () => {
             players and more.
           </p>
         </div>
-        <div className="hero__card-video">
-          <div className="hero__card-img">
+        <div className="hero__card-img">
+          <div className="hero__card-video">
             <img src={NetflixTv} alt="Netflix Tv" />
             <div className="hero-video">
               <video autoPlay muted playsInline loop>

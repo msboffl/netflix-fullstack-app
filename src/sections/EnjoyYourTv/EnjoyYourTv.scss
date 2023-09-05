@@ -10,14 +10,10 @@
 }
 .hero__card {
   @include hero__card;
-  .hero__card-text,
-  .hero__card-video {
-    flex-basis: 50%;
-  }
 }
 
-.hero__card-video {
-  .hero__card-img {
+.hero__card-img {
+  .hero__card-video {
     position: relative;
     img {
       width: 100%;
@@ -40,7 +36,6 @@
 @media screen and (min-width: $md) {
   .hero__card {
     text-align: left;
-    max-width: calc(100% - 4rem);
     flex-direction: row;
     .hero__title {
       font-size: 3rem;
@@ -50,11 +45,5 @@
       font-size: 1.5rem;
       font-weight: 400;
     }
-  }
-}
-
-@media screen and (min-width: $lg) {
-  .hero__card {
-    max-width: calc(84% - 5rem);
   }
 }

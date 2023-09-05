@@ -32,12 +32,26 @@
   background-color: $black-800;
 }
 
+@mixin row_reverse {
+  flex-direction: row-reverse;
+}
+
 @mixin hero__card {
   margin: auto;
   max-width: calc(100% - 3rem);
   display: flex;
   flex-direction: column;
   align-items: center;
+  .hero__card-text,
+  .hero__card-img {
+    flex-basis: 50%;
+  }
+  @media screen and (min-width: $md) {
+    max-width: calc(100% - 4rem);
+  }
+  @media screen and (min-width: $lg) {
+    max-width: calc(80% - 6rem);
+  }
 
   .hero__title {
     margin: 0;
