@@ -14,10 +14,14 @@ const KidProfiles = () => {
           </p>
         </div>
         <div className="hero__card-img">
-          <img src={KidProfileBanner} alt="Kid Profile" />
+          <div className="hero__card-video">
+            <img src={KidProfileBanner} alt="Kid Profile" />
+          </div>
         </div>
       </div>
-      <div className="hero__card-divider"></div>
+      <div className="hero__card-divider">
+        
+      </div>
     </section>
   );
 };

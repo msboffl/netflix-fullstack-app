@@ -1,0 +1,90 @@
+@use "../../styles/variable.scss" as *;
+@use "../../styles/media.scss" as *;
+.faq__row {
+  margin: auto;
+  max-width: calc(100% - 3rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  .hero__card {
+    align-items: normal;
+    text-align: center;
+    @media screen and (min-width: $md) {
+      flex-direction: column;
+    }
+  }
+  .faq__hero {
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+  }
+}
+.hero__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.faqs {
+  margin: auto;
+  max-width: calc(100% - 3rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.faqs__container {
+  margin: 1.5rem 0 0;
+  .faq__accordian {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      margin: 0 0 0.5rem 0;
+    }
+  }
+}
+.faq-btn {
+  padding: 1.5rem;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+
+.faq__question {
+  display: flex;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: $black-750;
+  color: $white-900;
+  margin: 0.0625rem;
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+  position: relative;
+}
+.faq__answer {
+  padding: 1.5rem;
+  background-color: $black-750;
+  color: $white-900;
+  text-align: left;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+
+@media screen and (min-width: $md) {
+  .faqs__container .faq__accordian {
+    font-size: 1.5rem;
+  }
+}
+
+.crossIcon {
+  transform: rotate(-45deg);
+}
