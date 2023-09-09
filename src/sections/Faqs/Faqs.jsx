@@ -2,6 +2,7 @@ import { Divider } from "../../components";
 import "./Faqs.scss";
 import { PlusIcon } from "../../Assets/icons";
 import { useState } from "react";
+import { Input } from "../../components";
 
 const faqsData = [
   {
@@ -87,6 +88,9 @@ const Faqs = () => {
                 </li>
               ))}
             </ul>
+            <div className="faqs_input">
+              <Input />
+            </div>
           </div>
         </div>
       </div>

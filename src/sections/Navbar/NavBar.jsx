@@ -12,17 +12,13 @@ const NavBar = () => {
         <span className="language">
           <img src={Globe} alt="Globe" className="globe" />
           <label htmlFor="language-picker"></label>
-          <select
-            
-            name="Language"
-            id="language-picker"
-          >
+          <select name="Language" id="language-picker">
             <option value="en-IN">English</option>
             <option value="hi-IN">हिन्दी</option>
           </select>
         </span>
         <span className="button">
-          <Button name="Sign In" />
+          <Button btnName="Sign In" />
         </span>
       </div>
     </header>
